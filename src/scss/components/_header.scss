@@ -1,6 +1,5 @@
 .burger {
   @include burger(24px, 24px, $primary, 3px);
-
   display: none;
 }
 
@@ -73,7 +72,7 @@
       color: $primary;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: -2px;
         right: calc(100% + 2px);
@@ -81,7 +80,7 @@
         left: -2px;
         z-index: -1;
         background: $pink-violet;
-        transition: right .2s ease-in-out;
+        transition: right 0.2s ease-in-out;
       }
 
       &:hover {
@@ -164,7 +163,7 @@
       &__list {
         max-height: 120px;
         padding: 11.5px 0;
-/*         overflow-x: hidden; */
+        /*         overflow-x: hidden; */
       }
 
       &-item {
@@ -177,10 +176,10 @@
           line-height: 1.3;
           color: $black;
           text-align: left;
-          transition: color .2s ease-in-out;
+          transition: color 0.2s ease-in-out;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             right: 100%;
@@ -188,7 +187,7 @@
             left: 0;
             z-index: -1;
             background: $pink-violet;
-            transition: right .2s ease-in-out;
+            transition: right 0.2s ease-in-out;
           }
 
           &:hover {
@@ -223,10 +222,10 @@
     font-size: 14px;
     line-height: 1;
     color: $secondary;
-    transition: color .2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: -2px;
       right: calc(100% + 2px);
@@ -234,7 +233,7 @@
       left: -2px;
       z-index: -1;
       background: $bone;
-      transition: right .2s ease-in-out;
+      transition: right 0.2s ease-in-out;
     }
 
     &:hover {
@@ -269,7 +268,7 @@
   &-phone {
     &__icon {
       fill: $secondary;
-      transition: fill .2s ease-in-out;
+      transition: fill 0.2s ease-in-out;
     }
   }
 
@@ -300,7 +299,7 @@
         line-height: 1.2;
         color: $black;
         transition-property: background, border;
-        transition-duration: .2s;
+        transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
 
         &::placeholder {
@@ -344,7 +343,7 @@
         left: 34px;
         top: 36%;
         fill: $grey;
-        transition: fill .2s ease-in-out;
+        transition: fill 0.2s ease-in-out;
       }
 
       &_arrow {
@@ -372,13 +371,13 @@
       &::after {
         right: calc(100% + 5px);
         left: -5px;
-        content: '';
+        content: "";
         position: absolute;
         top: -5px;
         bottom: -1px;
         z-index: -1;
         background: $primary-light;
-        transition: right .2s ease-in-out;
+        transition: right 0.2s ease-in-out;
       }
 
       &:hover {
@@ -415,13 +414,13 @@
   &-login {
     &__icon {
       fill: $primary;
-      transition: fill .2s ease-in-out;
+      transition: fill 0.2s ease-in-out;
     }
   }
 
   &__cart {
     &::before {
-      content: '0';
+      content: "0";
       position: absolute;
       top: 15%;
       left: -11px;
@@ -448,7 +447,7 @@
   &-cart {
     &__icon {
       fill: $primary;
-      transition: fill .2s ease-in-out;
+      transition: fill 0.2s ease-in-out;
     }
   }
 
@@ -540,7 +539,7 @@
   flex-basis: 28.275%;
   width: 28.275%;
 
-  &[data-type*=select-one] {
+  &[data-type*="select-one"] {
     &::after {
       top: 43%;
       right: 34.5px;
@@ -553,7 +552,7 @@
       border-top: none;
       transform: rotate(45deg);
       transition-property: transform, top;
-      transition-duration: .2s;
+      transition-duration: 0.2s;
       transition-timing-function: ease-in-out;
     }
 
@@ -580,7 +579,7 @@
     color: $primary;
     background: $white;
     transition-property: border-color, background;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 
     .choices__list {
@@ -675,15 +674,18 @@
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   left: 50%;
   background: $secondary;
-  opacity: .5;
-  transition: left .3s ease-in-out;
+  opacity: 0.5;
+  transition: left 0.3s ease-in-out;
 }
 
-.header-region-dropdown__list:hover .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+.header-region-dropdown__list:hover
+  .simplebar-track.simplebar-vertical
+  .simplebar-scrollbar:before {
   left: 3px;
 }
 
-.simplebar-track.simplebar-vertical .simplebar-scrollbar.simplebar-visible:before {
+.simplebar-track.simplebar-vertical
+  .simplebar-scrollbar.simplebar-visible:before {
   left: 3px;
 }
 
@@ -871,9 +873,11 @@
       display: none;
       padding: 92px 180px 60px 72px;
       border-top: 1px solid rgba(0, 0, 0, 0.2);
-      background: $white url(../img/nav-background.svg) right 72px bottom 60px no-repeat;
+      background: $white url(../img/nav-background.svg) right 72px bottom 60px
+        no-repeat;
       opacity: 0;
       transform: translateY(50px);
+
       &.nav_active {
         display: block;
         opacity: 1;
@@ -985,7 +989,6 @@
   $container-padding: 20px;
 
   .header {
-
     &__container {
       &-logo {
         justify-content: center;
@@ -1172,7 +1175,7 @@
   }
 
   .choices {
-    &[data-type*=select-one] {
+    &[data-type*="select-one"] {
       &::after {
         right: 35px;
       }
